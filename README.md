@@ -3,7 +3,7 @@ Omni-Payload-Generator is a versatile toolkit designed for penetration testers a
 
 # Key Features
 - **Multiple Shell Command Generation**: Generate reverse shell payloads with ease using various technologies including Bash, Python, PowerShell, and much more.
-- **Environment Testing**: Includes functionality to check both Windows and Unix/Linux environments.
+- **Environment Testing**: Includes functionality to generate payloads for identifying shell environments, such as PowerShell/CMD (Windows) and Bash/Sh (Unix/Linux).
 - **Advanced Encoding Options**: Supports URL encoding and Base64 encoding to obfuscate commands, enhancing penetration testing efforts.
 - **Customizable for Complex Scenarios**: Offers options for custom injections using IFS variables, tailored for specific exploitation scenarios.
 
