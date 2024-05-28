@@ -18,5 +18,10 @@ python3 Omni-Payload-Generator.py -y3 10.10.14.20 443 -ifs injection
 python3 Omni-Payload-Generator.py -y 10.10.14.20 443 -ifs ssti -e
 
 
+# Instructions
+  git clone https://github.com/loganpkinfosec/omni-reverse-payload-generator/
+  cd omni-reverse-payload-generator
+  chmod +x *
+
 
 
