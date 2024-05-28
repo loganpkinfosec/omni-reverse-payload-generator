@@ -6,5 +6,11 @@ Omni-Reverse-Payload-Generator is a versatile tool designed for penetration test
 - **Environment Testing**: Includes functionality to generate payloads for identifying shell environments, such as PowerShell/CMD (Windows) and Bash/Sh (Unix/Linux).
 - **Advanced Encoding Options**: Supports URL, Internal Field Separator (IFS), and Base64 encoding to obfuscate and bypass Web Application Firewalls (WAF), enhancing penetration testing efforts.
 
+# Useage
+python3 Omni-Payload-Generator.py $PAYLOAD_TYPE $LHOST $LPORT $OPTIONS
+python3 Omni-Payload-Generator.py -ps 10.10.14.20 443
+python3 Omni-Payload-Generator.py -ps 10.10.14.20 443 -e
+python3 Omni-Payload-Generator.py -ps 10.10.14.20 443 -ifs injection
+
 
 
