@@ -1,5 +1,5 @@
 ### **What Is It?**
-**Omni-Reverse-Payload-Generator** is a versatile and powerful tool designed for penetration testers and security professionals. It allows you to quickly generate reverse shell payloads offline using various programming languages and shells, such as Bash, Python, PowerShell, and more. The tool supports advanced encoding techniques, making it effective for bypassing security controls like Web Application Firewalls (WAFs). 
+**Omni-Reverse-Payload-Generator** Is a versatile and powerful tool that enables security professionals to quickly generate reverse shell payloads offline using various programming languages and shells. What sets this tool apart is its ability to seamlessly integrate advanced encoding techniques directly within the generated output, ensuring the payloads are pre-encoded to effectively bypass security measures like Web Application Firewalls (WAFs) without the need for additional steps. 
 
 ### **Key Features**
 - **Multiple Reverse Payload Generation**: Quickly generate payloads for various environments, including Bash, Netcat, Perl, Python, PowerShell, and MSSQL, ensuring compatibility with different target systems.
